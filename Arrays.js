@@ -52,7 +52,7 @@ let Obj={
 
 }
 const arr8=Array.from(Obj);
-console.log(arr8);
+c//onsole.log(arr8);
 
 //of
 const score1=100;
