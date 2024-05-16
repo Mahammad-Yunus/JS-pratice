@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1 id="heading" class="tags">DOM Manipulation</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <ul>
+        <li>ONE</li>
+        <li>TWO</li>
+        <li>THree</li>
+        <li>Four</li>
+        <li>Five</li>
+    </ul>
+</body>
+</html>
+
+
+<!-- const templist=document.querySelectorAll('li')
+undefined
+templist
+NodeList(5) [li, li, li, li, li]   //not pure array
+
+templist.forEach(function(item){
+    item.style.backgroundColor='green'
+}) -->
+
+<!-- const list=document.getElementByClassName('heading')
+undefined
+list
+HTMLCollection(5) [li, li, li, li, li]
+
+Array.from(list)  Convert HTMLCollection to Array
+list.forEach(function(item){
+    item.style.backgroundColor='green'
+}) -->
+
+<!-- document.getElementById('heading')
+document.getElementByClassName('heading')
+document.querySelector('li') --selects the first element
+document.querySelectorAll('li')
+
+document.getElementById('heading').innerHTML(); --gives the html
+                                  .textContent() --gives all the content which is hidden also
+                                  .innerText()  --gives only visiable text -->
+
+
