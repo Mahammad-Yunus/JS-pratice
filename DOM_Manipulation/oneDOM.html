@@ -10,12 +10,12 @@
         <h1 id="heading" class="tags">DOM Manipulation</h1>
         <p id="hello">Lorem ipsum dolor sit amet.</p>
     </div>
-    <ul>
-        <li>ONE</li>
-        <li>TWO</li>
-        <li>THree</li>
-        <li>Four</li>
-        <li>Five</li>
+    <ul id="images">
+        <li id="one">ONE</li>
+        <li id="two">TWO</li>
+        <li id="three">THree</li>
+        <li id="four">Four</li>
+        <li id="five">Five</li>
     </ul>
 </body>
 <script>
@@ -24,6 +24,13 @@
     console.log(id.className);
     console.log(id.id);
     document.querySelector('#hello').setAttribute('className',"test");
+
+    console.log(document.getElementById('one').parentElement);//access the parent element of the tag
+    console.log(document.getElementById('one').parentElement.nextElementSibling);//access the siblings of the element
+    console.log(document.getElementById('one').parentElement.childNodes);//to see the all nodes of the ul tag
+
+
+    
 </script>
 </html>
 
