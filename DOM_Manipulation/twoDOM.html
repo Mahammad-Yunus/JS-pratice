@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    //create a new DOM (Nodelist)
+
+    const div=document.createElement('div');
+    console.log(div);
+
+    div.className="divmain";
+    div.id=Math.round(Math.random()*10+1);
+    div.setAttribute("title","divgenertad");
+
+    div.style.backgroundColor='green';
+    div.style.padding="10px 10px";
+
+    //div.innerHTML="Hello World! I am Yunus"; it sis no good to use it effect the performance because we it will travese the whole tree and override it.
+    const addText=document.createTextNode('Hello World! I am Yunus');
+    div.appendChild(addText);//add text to div
+
+    document.body.appendChild(div);//append div to body
+
+</script>
+</html>
