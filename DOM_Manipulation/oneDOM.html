@@ -8,7 +8,7 @@
 <body>
     <div>
         <h1 id="heading" class="tags">DOM Manipulation</h1>
-        <p>Lorem ipsum dolor sit amet.</p>
+        <p id="hello">Lorem ipsum dolor sit amet.</p>
     </div>
     <ul>
         <li>ONE</li>
@@ -18,9 +18,16 @@
         <li>Five</li>
     </ul>
 </body>
+<script>
+    const id=document.getElementById('heading');
+    id.style.backgroundColor="red";
+    console.log(id.className);
+    console.log(id.id);
+    document.querySelector('#hello').setAttribute('className',"test");
+</script>
 </html>
 
-
+if we select all using queryselector all we will get NodeList
 <!-- const templist=document.querySelectorAll('li')
 undefined
 templist
@@ -30,6 +37,8 @@ templist.forEach(function(item){
     item.style.backgroundColor='green'
 }) -->
 
+
+if we select all using Classname all we will get HTMLCollection
 <!-- const list=document.getElementByClassName('heading')
 undefined
 list
